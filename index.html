@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>DeepSeek 沉浸翻译 隐私政策 / Privacy Policy</title>
+  <style>
+    :root { --bg: #ffffff; --text: #1f2329; --muted: #6b7280; --border: #e3e5e8; --accent: #4d6bfe; }
+    @media (prefers-color-scheme: dark) {
+      :root { --bg: #17181b; --text: #e6e7ea; --muted: #9aa0a8; --border: #34363c; }
+    }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: var(--bg); color: var(--text); font: 15px/1.75 system-ui, -apple-system, "Segoe UI", "Microsoft YaHei", sans-serif; }
+    main { max-width: 760px; margin: 0 auto; padding: 32px 16px 64px; }
+    h1 { font-size: 24px; margin: 0 0 4px; }
+    h2 { font-size: 18px; margin: 28px 0 8px; }
+    .meta { color: var(--muted); margin: 0 0 16px; }
+    hr { border: none; border-top: 1px solid var(--border); margin: 48px 0; }
+    a { color: var(--accent); }
+    code { font-size: 0.92em; }
+  </style>
+</head>
+<body>
+<main>
+
+<section lang="zh-CN">
+  <h1>DeepSeek 沉浸翻译 隐私政策</h1>
+  <p class="meta">生效日期:2026 年 11 月 12 日 · <a href="#en">English version below</a></p>
+
+  <p>「DeepSeek 沉浸翻译」(以下简称“本扩展”)是一款 Microsoft Edge 浏览器扩展,使用用户自己提供的 DeepSeek API Key 对网页进行双语对照翻译。本政策说明本扩展会处理哪些数据、如何处理以及你的选择。</p>
+
+  <h2>1. 本扩展的开发者不收集任何数据</h2>
+  <p>本扩展没有自己的服务器。开发者不会收集、接收、存储、出售或分享你的任何个人信息、浏览记录或网页内容。本扩展不包含任何统计分析、广告或追踪代码。</p>
+
+  <h2>2. 保存在你本机浏览器中的数据</h2>
+  <ul>
+    <li><strong>DeepSeek API Key</strong>:保存在浏览器的本地扩展存储(<code>chrome.storage.local</code>)中,只存在于你的设备上,不会同步到其他设备。</li>
+    <li><strong>偏好设置</strong>(模型名称、目标语言、显示方式、译文样式):保存在浏览器的扩展同步存储(<code>chrome.storage.sync</code>)中。如果你开启了浏览器的账号同步,这些设置会由浏览器同步到你登录的其他设备。</li>
+    <li><strong>悬浮按钮位置</strong>:保存在本地扩展存储中。</li>
+    <li><strong>翻译结果缓存</strong>:只临时保存在当前标签页的内存中,刷新或关闭页面后即被清除。</li>
+  </ul>
+
+  <h2>3. 发送给 DeepSeek 的数据</h2>
+  <p>只有当你在某个网页上点击本扩展的翻译按钮后,本扩展才会读取该网页的文字内容。翻译时,本扩展会把以下内容通过 HTTPS 直接发送到 DeepSeek 官方 API(<code>https://api.deepseek.com</code>):</p>
+  <ul>
+    <li>当前网页中需要翻译的文字段落(随页面滚动按需发送)以及网页标题(作为翻译上下文);</li>
+    <li>你的 DeepSeek API Key(作为请求的身份验证信息);</li>
+    <li>你选择的模型名称和目标语言。</li>
+  </ul>
+  <p>这些数据只发送给 DeepSeek,不会经过开发者或其他任何第三方。DeepSeek 对这些数据的处理受 DeepSeek 自己的服务条款和隐私政策约束,请在 DeepSeek 官网查阅。请勿对包含敏感信息(如密码、银行信息、私人通信)的网页使用翻译功能。</p>
+  <p>在你点击翻译按钮之前,本扩展只会在网页上显示悬浮按钮,不会读取或发送网页内容。代码块、输入框、可编辑区域中的内容不会被翻译或发送。</p>
+
+  <h2>4. 权限说明</h2>
+  <ul>
+    <li><code>storage</code>:保存你的 API Key 和偏好设置。</li>
+    <li>访问 <code>https://api.deepseek.com/*</code>:向 DeepSeek 发送翻译请求。</li>
+    <li>在所有网站上运行内容脚本:在网页上显示翻译按钮,并在你点击后把译文显示在原文旁边。</li>
+  </ul>
+
+  <h2>5. 你的选择</h2>
+  <ul>
+    <li>你可以随时在本扩展的设置页中清空或更换 API Key。</li>
+    <li>卸载本扩展后,浏览器会删除本扩展保存的所有本地数据。</li>
+    <li>如需删除已发送给 DeepSeek 的数据,请联系 DeepSeek 或在 DeepSeek 平台中管理你的账户。</li>
+  </ul>
+
+  <h2>6. 儿童隐私</h2>
+  <p>本扩展不面向儿童,也不会有意收集儿童的个人信息。</p>
+
+  <h2>7. 政策变更</h2>
+  <p>如本政策发生变更,更新后的版本会发布在本页面,并更新上方的生效日期。</p>
+
+  <h2>8. 联系方式</h2>
+  <p>如对本政策有任何疑问,请联系:christopheryyx@foxmail.com</p>
+</section>
+
+<hr />
+
+<section lang="en" id="en">
+  <h1>DeepSeek Immersive Translator Privacy Policy</h1>
+  <p class="meta">Effective date: November 12, 2026</p>
+
+  <p>"DeepSeek 沉浸翻译" (DeepSeek Immersive Translator, "the extension") is a Microsoft Edge extension that translates web pages side by side, using a DeepSeek API key provided by the user. This policy explains what data the extension handles, how it is handled, and the choices you have.</p>
+
+  <h2>1. The developer collects no data</h2>
+  <p>The extension has no server of its own. The developer does not collect, receive, store, sell or share any of your personal information, browsing history or page content. The extension contains no analytics, advertising or tracking code.</p>
+
+  <h2>2. Data stored in your browser</h2>
+  <ul>
+    <li><strong>DeepSeek API key</strong>: stored in the browser's local extension storage (<code>chrome.storage.local</code>), on your device only. It is not synced to other devices.</li>
+    <li><strong>Preferences</strong> (model name, target language, display mode, translation style): stored in the browser's extension sync storage (<code>chrome.storage.sync</code>). If browser sync is turned on, the browser syncs these settings to your other signed-in devices.</li>
+    <li><strong>Floating button position</strong>: stored in local extension storage.</li>
+    <li><strong>Translation cache</strong>: kept only in the memory of the current tab and cleared when the page is reloaded or closed.</li>
+  </ul>
+
+  <h2>3. Data sent to DeepSeek</h2>
+  <p>The extension reads a page's text only after you click its translate button on that page. To translate, it sends the following directly to the official DeepSeek API (<code>https://api.deepseek.com</code>) over HTTPS:</p>
+  <ul>
+    <li>the text passages of the current page that need translating (sent on demand as you scroll), and the page title (as translation context);</li>
+    <li>your DeepSeek API key (to authenticate the request);</li>
+    <li>the model name and target language you selected.</li>
+  </ul>
+  <p>This data goes only to DeepSeek. It does not pass through the developer or any other third party. DeepSeek's handling of this data is governed by DeepSeek's own terms of service and privacy policy, available on DeepSeek's website. Do not use the translation feature on pages containing sensitive information (such as passwords, banking details or private messages).</p>
+  <p>Before you click the translate button, the extension only shows the floating button on the page; it does not read or send page content. Content in code blocks, input fields and editable areas is never translated or sent.</p>
+
+  <h2>4. Permissions</h2>
+  <ul>
+    <li><code>storage</code>: to save your API key and preferences.</li>
+    <li>Access to <code>https://api.deepseek.com/*</code>: to send translation requests to DeepSeek.</li>
+    <li>Content script on all sites: to show the translate button on web pages and, after you click it, display translations next to the original text.</li>
+  </ul>
+
+  <h2>5. Your choices</h2>
+  <ul>
+    <li>You can clear or replace your API key at any time on the extension's settings page.</li>
+    <li>Uninstalling the extension removes all data it stored in your browser.</li>
+    <li>To delete data already sent to DeepSeek, contact DeepSeek or manage your account on the DeepSeek platform.</li>
+  </ul>
+
+  <h2>6. Children's privacy</h2>
+  <p>The extension is not directed at children and does not knowingly collect personal information from children.</p>
+
+  <h2>7. Changes to this policy</h2>
+  <p>If this policy changes, the updated version will be posted on this page and the effective date above will be updated.</p>
+
+  <h2>8. Contact</h2>
+  <p>If you have any questions about this policy, contact: christopheryyx@foxmail.com</p>
+</section>
+
+</main>
+</body>
+</html>
